@@ -8,7 +8,7 @@ from wagtail.blocks import (BooleanBlock, CharBlock, ChoiceBlock,
 import wagtail
 
 from wagtail.blocks.struct_block import StructBlockAdapter
-from wagtail.telepath import register
+# from wagtail.telepath import register
 
 CHART_TYPES = (
     ('line', 'Line Chart'),
@@ -150,4 +150,4 @@ class ChartBlockAdapter(StructBlockAdapter):
             css={** structblock_media._css, **{'all': ('wagtailcharts/css/jspreadsheet.css', 'wagtailcharts/css/jspreadsheet.theme.css', 'wagtailcharts/css/jsuites.css', 'wagtailcharts/css/wagtailcharts.css')}}
         )
 
-register(ChartBlockAdapter(), ChartBlock)
+# register(ChartBlockAdapter(), ChartBlock)
